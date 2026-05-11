@@ -2,15 +2,48 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-dark bg-dark px-4">
-      <span className="navbar-brand">Start Bootstrap</span>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 
-      <div>
-        <a className="text-white mx-2">Home</a>
-        <a className="text-white mx-2">About</a>
-        <a className="text-white mx-2">Services</a>
-        <a className="text-white mx-2">Contact</a>
+      <div className="container">
+
+        <a className="navbar-brand" href="#">
+          Start Bootstrap
+        </a>
+
+        <div className="collapse navbar-collapse justify-content-end">
+
+          <ul className="navbar-nav">
+
+            <li className="nav-item">
+              <a className="nav-link active" href="#">
+                Home
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                About
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Services
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
       </div>
+
     </nav>
   );
 };
